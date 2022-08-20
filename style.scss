@@ -3,3 +3,49 @@
   font-size: 42px;
   font-family: consolas;
 }
+
+$primer: #0d1117;
+$secondary: #161b22;
+
+// btn link
+.btn {
+  &-menu {
+    color: white !important;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: none !important;
+    }
+    &:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+// icon
+.icon {
+  font-size: 24px;
+  color: white;
+}
+
+// ----- PAGES -----
+
+// navbar
+nav {
+  background-color: $secondary;
+  height: 61px;
+  .logo {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    object-position: center;
+  }
+  .social-media {
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
