@@ -112,6 +112,15 @@ header {
 // tab section
 .tab-section {
   background-color: $primer;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    height: 10px;
+    background-color: #33383f;
+    outline: 1px solid #33383f;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primer;
+  }
   .wrapper-section {
     border-bottom: 1px solid #33383f;
     .tab-menu {

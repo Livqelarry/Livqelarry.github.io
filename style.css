@@ -120,6 +120,17 @@ header .img-banner {
 
 .tab-section {
   background-color: #0d1117;
+  overflow: auto;
+}
+
+.tab-section::-webkit-scrollbar {
+  height: 10px;
+  background-color: #33383f;
+  outline: 1px solid #33383f;
+}
+
+.tab-section::-webkit-scrollbar-thumb {
+  background-color: #0d1117;
 }
 
 .tab-section .wrapper-section {

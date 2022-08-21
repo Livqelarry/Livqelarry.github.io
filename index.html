@@ -25,28 +25,35 @@
     <!-- Content -->
     <div class="content" style="display: none">
       <!-- Navbar -->
-      <nav class="d-flex align-items-center px-5">
+      <nav class="d-flex align-items-center justify-content-between px-3 px-md-5">
         <a href="#">
           <img class="logo" src="/assets/img/avatar-default.png" alt="avatar image" />
         </a>
-        <div class="menu ms-4 d-flex gap-1">
-          <a href="#tabSection" class="text-decoration-none">
-            <button class="btn btn-menu menu-portofolio">Portofolio</button>
-          </a>
-          <a href="#tabSection" class="text-decoration-none">
-            <button class="btn btn-menu menu-about">About</button>
-          </a>
-          <a href="#tabSection" class="text-decoration-none">
-            <button class="btn btn-menu menu-blogs">Blogs</button>
-          </a>
+        <div class="d-md-flex align-items-center w-100 d-none">
+          <div class="menu ms-4 d-flex gap-1">
+            <a href="#tabSection" class="text-decoration-none">
+              <button class="btn btn-menu menu-portofolio">Portofolio</button>
+            </a>
+            <a href="#tabSection" class="text-decoration-none">
+              <button class="btn btn-menu menu-about">About</button>
+            </a>
+            <a href="#tabSection" class="text-decoration-none">
+              <button class="btn btn-menu menu-blogs">Blogs</button>
+            </a>
+          </div>
+          <div class="social-media ms-auto d-flex gap-3">
+            <a href="https://www.linkedin.com/in/praditya-aldi-syahputra-0065131b8" target="_blank">
+              <i class="icon bx bxl-linkedin-square"></i>
+            </a>
+            <a href="https://github.com/Livqelarry" target="_blank">
+              <i class="icon bx bxl-github"></i>
+            </a>
+          </div>
         </div>
-        <div class="social-media ms-auto d-flex gap-3">
-          <a href="https://www.linkedin.com/in/praditya-aldi-syahputra-0065131b8" target="_blank">
-            <i class="icon bx bxl-linkedin-square"></i>
-          </a>
-          <a href="https://github.com/Livqelarry" target="_blank">
-            <i class="icon bx bxl-github"></i>
-          </a>
+        <div class="menu-mobile d-md-none d-block">
+          <button class="btn btn-menu">
+            <i class="icon bx bx-menu"></i>
+          </button>
         </div>
       </nav>
 
@@ -218,9 +225,11 @@
       <footer>
         <div class="container pt-5">
           <div class="wrap-footer py-3">
-            <div class="row align-items-center">
+            <div class="row align-items-center gap-md-0 gap-3">
               <div class="col-md-4">
-                <div class="d-flex align-items-center gap-4">
+                <div
+                  class="d-flex align-items-center gap-4 justify-content-md-start justify-content-center"
+                >
                   <img src="/assets/img/avatar-default.png" alt="image profile" />
                   <p class="mb-0 fs-7">Created in 2022</p>
                 </div>
@@ -239,7 +248,9 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="d-flex gap-3 justify-content-end align-items-center">
+                <div
+                  class="d-flex gap-3 justify-content-md-end justify-content-center align-items-center"
+                >
                   <a
                     href="https://www.linkedin.com/in/praditya-aldi-syahputra-0065131b8"
                     target="_blank"
