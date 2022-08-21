@@ -23,6 +23,16 @@ p {
   font-weight: 300 !important;
 }
 
+// font size
+.fs {
+  &-7 {
+    font-size: 14px;
+  }
+  &-8 {
+    font-size: 12px;
+  }
+}
+
 // btn link
 .btn {
   &-menu {
@@ -89,6 +99,39 @@ nav {
           background-color: #e34c26;
         }
       }
+    }
+  }
+}
+
+// tab content portofolio
+.portofolio {
+  .card {
+    outline: none !important;
+    background-color: $primer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #33383f;
+    margin-bottom: 2rem;
+    .img-portofolio {
+      height: 146px;
+      object-fit: cover;
+      object-position: center;
+      @media (max-width: 1200px) {
+        height: 120px;
+      }
+      @media (max-width: 992px) {
+      }
+      @media (max-width: 576px) {
+      }
+    }
+    .recap {
+      padding: 1rem;
+      background-color: $secondary;
+      border-bottom: 1px solid #33383f;
+    }
+    .last-updateded {
+      padding: 0.75rem 1rem;
+      background-color: $primer;
     }
   }
 }
