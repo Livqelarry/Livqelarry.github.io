@@ -75,6 +75,20 @@ nav .social-media a {
   text-decoration: none !important;
 }
 
+header {
+  height: 200px;
+  overflow: hidden;
+}
+
+header .img-banner {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .tab-section {
   background-color: #0d1117;
 }
@@ -98,16 +112,24 @@ nav .social-media a {
   background-color: #e34c26;
 }
 
-.portofolio .card {
+.wrap-tab-content .tab-content {
+  display: none;
+}
+
+.wrap-tab-content .active {
+  display: block;
+}
+
+.card {
   outline: none !important;
-  background-color: #0d1117;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  border: 1px solid #33383f;
+  background-color: #0d1117 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+  border: 1px solid #33383f !important;
   margin-bottom: 2rem;
 }
 
-.portofolio .card .img-portofolio {
+.card .img-portofolio {
   height: 146px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -116,19 +138,23 @@ nav .social-media a {
 }
 
 @media (max-width: 1200px) {
-  .portofolio .card .img-portofolio {
+  .card .img-portofolio {
     height: 120px;
   }
 }
 
-.portofolio .card .recap {
+.card .recap {
   padding: 1rem;
   background-color: #161b22;
   border-bottom: 1px solid #33383f;
 }
 
-.portofolio .card .last-updateded {
+.card .last-updateded {
   padding: 0.75rem 1rem;
   background-color: #0d1117;
+}
+
+footer .wrap-footer {
+  border-top: 1px solid #33383f;
 }
 /*# sourceMappingURL=style.css.map */
