@@ -1,12 +1,33 @@
-.hello-world {
-  color: lightblue;
-  font-size: 42px;
-  font-family: consolas;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Inter:wght@200;400;600&display=swap");
+body {
+  background-color: #0d1117 !important;
+  color: white !important;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inconsolata", monospace !important;
+}
+
+p {
+  letter-spacing: 0.02em;
+  font-weight: 300 !important;
 }
 
 .btn-menu {
   color: white !important;
   background-color: transparent;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-menu:hover {
@@ -44,5 +65,28 @@ nav .logo {
 
 nav .social-media a {
   text-decoration: none !important;
+}
+
+.tab-section {
+  background-color: #0d1117;
+}
+
+.tab-section .wrapper-section {
+  border-bottom: 1px solid #33383f;
+}
+
+.tab-section .wrapper-section .tab-menu .btn-menu {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.tab-section .wrapper-section .tab-menu .active::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  width: 100%;
+  height: 2px;
+  background-color: #e34c26;
 }
 /*# sourceMappingURL=style.css.map */
