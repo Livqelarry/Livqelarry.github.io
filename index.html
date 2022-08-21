@@ -18,149 +18,53 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="d-flex align-items-center px-5">
-      <a href="#">
-        <img class="logo" src="/assets/img/avatar-default.png" alt="avatar image" />
-      </a>
-      <div class="menu ms-4 d-flex gap-1">
-        <a href="#tabSection" class="text-decoration-none">
-          <button class="btn btn-menu menu-portofolio">Portofolio</button>
-        </a>
-        <a href="#tabSection" class="text-decoration-none">
-          <button class="btn btn-menu menu-about">About</button>
-        </a>
-        <a href="#tabSection" class="text-decoration-none">
-          <button class="btn btn-menu menu-blogs">Blogs</button>
-        </a>
-      </div>
-      <div class="social-media ms-auto d-flex gap-2">
+    <div class="loading">
+      <i class="icon bx bxs-game bx-tada"></i>
+    </div>
+
+    <!-- Content -->
+    <div class="content" style="display: none">
+      <!-- Navbar -->
+      <nav class="d-flex align-items-center px-5">
         <a href="#">
-          <i class="icon bx bxl-linkedin-square"></i>
+          <img class="logo" src="/assets/img/avatar-default.png" alt="avatar image" />
         </a>
-        <a href="#">
-          <i class="icon bx bxl-github"></i>
-        </a>
-      </div>
-    </nav>
-
-    <!-- Banner -->
-    <header>
-      <img
-        class="img-banner"
-        src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-        alt="image portofolio"
-      />
-    </header>
-
-    <!-- Hello section -->
-    <section class="hello">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <h1 class="fs-1 fw-bold text-center mb-3">Hello World</h1>
-            <p class="fs-6">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique libero
-              corrupti ex rerum dolor nisi sed ad vel explicabo, non consequuntur eos debitis sequi
-              nesciunt omnis dicta? Asperiores nisi saepe totam quisquam dolorem officiis ipsam,
-              odit, accusamus similique perspiciatis natus tenetur adipisci, perferendis
-              voluptatibus? Perferendis dolor
-            </p>
-            <p class="fs-6">
-              reprehenderit recusandae corrupti expedita! Quam atque blanditiis, accusamus quae
-              asperiores dicta. Eveniet quos consequuntur debitis vitae. Quas quo dicta autem nihil,
-              nam recusandae ipsa quasi animi amet quis aspernatur totam! Quam, nobis odit
-              temporibus distinctio, eum sed tenetur porro magnam at qui quasi, delectus explicabo
-              illum. Pariatur accusamus temporibus quisquam placeat optio exercitationem.
-            </p>
-          </div>
+        <div class="menu ms-4 d-flex gap-1">
+          <a href="#tabSection" class="text-decoration-none">
+            <button class="btn btn-menu menu-portofolio">Portofolio</button>
+          </a>
+          <a href="#tabSection" class="text-decoration-none">
+            <button class="btn btn-menu menu-about">About</button>
+          </a>
+          <a href="#tabSection" class="text-decoration-none">
+            <button class="btn btn-menu menu-blogs">Blogs</button>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Tab section -->
-    <section id="tabSection" class="tab-section py-2">
-      <div class="wrapper-section">
-        <div class="container">
-          <div class="tab-menu d-flex align-items-end gap-2">
-            <button class="btn btn-menu menu-portofolio active">
-              <i class="bx bxs-star me-2"></i>Portofolio
-            </button>
-            <button class="btn btn-menu menu-about">
-              <i class="bx bx-info-circle me-2"></i>About
-            </button>
-            <button class="btn btn-menu menu-blogs">
-              <i class="bx bxs-edit-alt me-2"></i>Blogs
-            </button>
-          </div>
+        <div class="social-media ms-auto d-flex gap-2">
+          <a href="#">
+            <i class="icon bx bxl-linkedin-square"></i>
+          </a>
+          <a href="#">
+            <i class="icon bx bxl-github"></i>
+          </a>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <!-- wrap tab content -->
-    <div class="wrap-tab-content">
-      <!-- Tab content portofolio -->
-      <section class="tab-content portofolio active">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-3 col-sm-4">
-              <div class="card">
-                <img
-                  class="img-portofolio"
-                  src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-                  alt="image portofolio"
-                />
-                <div class="recap">
-                  <h5>Kaca Pengok</h5>
-                  <p class="fs-7 mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
-                  </p>
-                </div>
-                <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="card">
-                <img
-                  class="img-portofolio"
-                  src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-                  alt="image portofolio"
-                />
-                <div class="recap">
-                  <h5>Kaca Pengok</h5>
-                  <p class="fs-7 mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
-                  </p>
-                </div>
-                <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="card">
-                <img
-                  class="img-portofolio"
-                  src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-                  alt="image portofolio"
-                />
-                <div class="recap">
-                  <h5>Kaca Pengok</h5>
-                  <p class="fs-7 mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
-                  </p>
-                </div>
-                <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Banner -->
+      <header>
+        <img
+          class="img-banner"
+          src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+          alt="image portofolio"
+        />
+      </header>
 
-      <!-- Tab content about -->
-      <section class="tab-content about">
+      <!-- Hello section -->
+      <section class="hello">
         <div class="container py-5">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <h1 class="fs-1 fw-bold mb-3">Hello World</h1>
+              <h1 class="fs-1 fw-bold text-center mb-3">Hello World</h1>
               <p class="fs-6">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique libero
                 corrupti ex rerum dolor nisi sed ad vel explicabo, non consequuntur eos debitis
@@ -180,86 +84,190 @@
         </div>
       </section>
 
-      <!-- Tab content blogs -->
-      <section class="tab-content blogs">
-        <div class="container py-5">
-          <div class="row justify-content-center">
-            <div class="col-md-5">
-              <div class="card">
-                <img
-                  class="img-portofolio"
-                  src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-                  alt="image portofolio"
-                />
-                <div class="recap">
-                  <h5>Kaca Pengok</h5>
-                  <p class="fs-7 mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
-                  </p>
-                </div>
-                <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
-              </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col-md-5">
-              <div class="card">
-                <img
-                  class="img-portofolio"
-                  src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
-                  alt="image portofolio"
-                />
-                <div class="recap">
-                  <h5>Kaca Pengok</h5>
-                  <p class="fs-7 mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
-                  </p>
-                </div>
-                <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
-              </div>
+      <!-- Tab section -->
+      <section id="tabSection" class="tab-section py-2">
+        <div class="wrapper-section">
+          <div class="container">
+            <div class="tab-menu d-flex align-items-end gap-2">
+              <button class="btn btn-menu menu-portofolio active">
+                <i class="bx bxs-star me-2"></i>Portofolio
+              </button>
+              <button class="btn btn-menu menu-about">
+                <i class="bx bx-info-circle me-2"></i>About
+              </button>
+              <button class="btn btn-menu menu-blogs">
+                <i class="bx bxs-edit-alt me-2"></i>Blogs
+              </button>
             </div>
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container pt-5">
-        <div class="wrap-footer py-3">
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <div class="d-flex align-items-center gap-4">
-                <img src="/assets/img/avatar-default.png" alt="image profile" />
-                <p class="mb-0 fs-7">Created in 2022</p>
+      <!-- wrap tab content -->
+      <div class="wrap-tab-content">
+        <!-- Tab content portofolio -->
+        <section class="tab-content portofolio active">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-3 col-sm-4">
+                <div class="card">
+                  <img
+                    class="img-portofolio"
+                    src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+                    alt="image portofolio"
+                  />
+                  <div class="recap">
+                    <h5>Kaca Pengok</h5>
+                    <p class="fs-7 mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
+                    </p>
+                  </div>
+                  <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-4">
+                <div class="card">
+                  <img
+                    class="img-portofolio"
+                    src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+                    alt="image portofolio"
+                  />
+                  <div class="recap">
+                    <h5>Kaca Pengok</h5>
+                    <p class="fs-7 mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
+                    </p>
+                  </div>
+                  <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-4">
+                <div class="card">
+                  <img
+                    class="img-portofolio"
+                    src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+                    alt="image portofolio"
+                  />
+                  <div class="recap">
+                    <h5>Kaca Pengok</h5>
+                    <p class="fs-7 mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
+                    </p>
+                  </div>
+                  <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
+                </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="d-flex gap-1 align-items-center justify-content-center">
-                <a href="#tabSection" class="text-decoration-none">
-                  <button class="btn btn-menu menu-portofolio">Portofolio</button>
-                </a>
-                <a href="#tabSection" class="text-decoration-none">
-                  <button class="btn btn-menu menu-about">About</button>
-                </a>
-                <a href="#tabSection" class="text-decoration-none">
-                  <button class="btn btn-menu menu-blogs">Blogs</button>
-                </a>
+          </div>
+        </section>
+
+        <!-- Tab content about -->
+        <section class="tab-content about">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h1 class="fs-1 fw-bold mb-3">Hello World</h1>
+                <p class="fs-6">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique libero
+                  corrupti ex rerum dolor nisi sed ad vel explicabo, non consequuntur eos debitis
+                  sequi nesciunt omnis dicta? Asperiores nisi saepe totam quisquam dolorem officiis
+                  ipsam, odit, accusamus similique perspiciatis natus tenetur adipisci, perferendis
+                  voluptatibus? Perferendis dolor
+                </p>
+                <p class="fs-6">
+                  reprehenderit recusandae corrupti expedita! Quam atque blanditiis, accusamus quae
+                  asperiores dicta. Eveniet quos consequuntur debitis vitae. Quas quo dicta autem
+                  nihil, nam recusandae ipsa quasi animi amet quis aspernatur totam! Quam, nobis
+                  odit temporibus distinctio, eum sed tenetur porro magnam at qui quasi, delectus
+                  explicabo illum. Pariatur accusamus temporibus quisquam placeat optio
+                  exercitationem.
+                </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="d-flex gap-3 justify-content-end align-items-center">
-                <a href="#">
-                  <i class="icon bx bxl-linkedin-square"></i>
-                </a>
-                <a href="#">
-                  <i class="icon bx bxl-github"></i>
-                </a>
+          </div>
+        </section>
+
+        <!-- Tab content blogs -->
+        <section class="tab-content blogs">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <div class="card">
+                  <img
+                    class="img-portofolio"
+                    src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+                    alt="image portofolio"
+                  />
+                  <div class="recap">
+                    <h5>Kaca Pengok</h5>
+                    <p class="fs-7 mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
+                    </p>
+                  </div>
+                  <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
+                </div>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-md-5">
+                <div class="card">
+                  <img
+                    class="img-portofolio"
+                    src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+                    alt="image portofolio"
+                  />
+                  <div class="recap">
+                    <h5>Kaca Pengok</h5>
+                    <p class="fs-7 mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quam.
+                    </p>
+                  </div>
+                  <div class="last-updateded"><p class="fs-8 mb-0">Updated yesterday</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container pt-5">
+          <div class="wrap-footer py-3">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="d-flex align-items-center gap-4">
+                  <img src="/assets/img/avatar-default.png" alt="image profile" />
+                  <p class="mb-0 fs-7">Created in 2022</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex gap-1 align-items-center justify-content-center">
+                  <a href="#tabSection" class="text-decoration-none">
+                    <button class="btn btn-menu menu-portofolio">Portofolio</button>
+                  </a>
+                  <a href="#tabSection" class="text-decoration-none">
+                    <button class="btn btn-menu menu-about">About</button>
+                  </a>
+                  <a href="#tabSection" class="text-decoration-none">
+                    <button class="btn btn-menu menu-blogs">Blogs</button>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex gap-3 justify-content-end align-items-center">
+                  <a href="#">
+                    <i class="icon bx bxl-linkedin-square"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon bx bxl-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- JS Jquery -->
     <script

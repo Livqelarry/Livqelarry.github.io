@@ -22,3 +22,10 @@ $(".menu-blogs").click(() => {
   $(".tab-section .menu-blogs").addClass("active");
   $(".tab-content.blogs").addClass("active");
 });
+
+$(document).ready(function () {
+  setTimeout(() => {
+    $(".content").show();
+    $(".loading").addClass("loaded");
+  }, 1000);
+});
