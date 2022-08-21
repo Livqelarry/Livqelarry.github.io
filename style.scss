@@ -84,6 +84,17 @@ p {
 nav {
   background-color: $secondary;
   height: 61px;
+  border-bottom: 1px solid #505a66;
+  position: relative;
+  &::after {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #505a66;
+  }
   .logo {
     height: 32px;
     width: 32px;
@@ -93,6 +104,31 @@ nav {
   .social-media {
     a {
       text-decoration: none !important;
+    }
+  }
+  .menus {
+    display: block;
+    @media (max-width: 768px) {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 100%;
+      background-color: $secondary;
+      padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+      transform: translateY(-140%);
+      transition: all 0.5s ease-in-out;
+      .menu {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        button {
+          border-bottom: 1px solid #505a66;
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+      &.active {
+        transform: translateY(0);
+      }
     }
   }
 }

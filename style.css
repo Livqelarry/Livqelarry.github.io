@@ -89,6 +89,18 @@ p {
 nav {
   background-color: #161b22;
   height: 61px;
+  border-bottom: 1px solid #505a66;
+  position: relative;
+}
+
+nav::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #505a66;
 }
 
 nav .logo {
@@ -102,6 +114,41 @@ nav .logo {
 
 nav .social-media a {
   text-decoration: none !important;
+}
+
+nav .menus {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  nav .menus {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background-color: #161b22;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    -webkit-transform: translateY(-140%);
+            transform: translateY(-140%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .menus .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  nav .menus .menu button {
+    border-bottom: 1px solid #505a66;
+    width: 100%;
+    border-radius: 0;
+  }
+  nav .menus.active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 header {
